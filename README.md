@@ -2,6 +2,8 @@
 
 > 模仿钉钉工作页面，基本完成
 
+![weex-demo.png](./previews/weex-demo.png)
+
 ## 预览
 
 ```bash

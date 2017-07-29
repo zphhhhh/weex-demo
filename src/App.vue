@@ -1,17 +1,17 @@
 <template>
-    <scroller class="container">
+    <scroller class="app">
         <div class="icon-container">
-            <icon-drawer :title="adminDrawer.title" :data="adminDrawer.data" :limit="adminDrawer.limit">
+            <icon-drawer class="icon-drawer" :class="{'icon-drawer--first': index === 0}" v-for="(drawer, index) in adminDrawers" :key="drawer.title"   :title="drawer.title" :data="drawer.data" :limit="drawer.limit">
                  <div slot="footer" class="drawer-footer">
                     <slider-news title="公告" :data="adminNews"></slider-news>
-                </div> 
+                </div>
             </icon-drawer>
         </div>
         <div class="icon-container">
-            <icon-drawer :style="{'border-top': index !== 0 ? '1px solid #ccc' : '0'}" v-for="(drawer, index) in drawers" :key="drawer.title" :title="drawer.title" :data="drawer.data" :limit="drawer.limit" />
+            <icon-drawer class="icon-drawer" :class="{'icon-drawer--first': index === 0}" v-for="(drawer, index) in drawers" :key="drawer.title" :title="drawer.title" :data="drawer.data" :limit="drawer.limit" />
         </div>
-        <div class="icon-container">
-            <icon-drawer v-for="(drawer, index) in drawers.slice(0, 1)" :key="drawer.title" :title="drawer.title" :data="drawer.data" :limit="drawer.limit" />
+        <div class="icon-container icon-container--last">
+            <icon-drawer class="icon-drawer" :class="{'icon-drawer--first': index === 0}" v-for="(drawer, index) in drawers.slice(0, 1)" :key="drawer.title" :title="drawer.title" :data="drawer.data" :limit="drawer.limit" />
         </div>
     </scroller>
 </template>
@@ -26,7 +26,7 @@ export default {
     data() {
         return {
             drawers: DrawerData,
-            adminDrawer: AdminData[0],
+            adminDrawers: AdminData,
             adminNews: [
                 '窗前明月光，疑是地上霜~~~',
                 '举头望明月，低头~思故乡~~~',
@@ -41,11 +41,13 @@ export default {
 }
 </script>
 
-<style scoped>
-.container {
+<style>
+.app {
     flex-direction: column;
     align-items: stretch;
     background: #f7f7f7;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .icon-container {
@@ -56,8 +58,16 @@ export default {
     border-bottom: 1px solid #ccc;
 }
 
+.icon-container--last {
+    margin-bottom: 0;
+}
+
 .icon-drawer {
-    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+.icon-drawer--first {
+    border-top: 0;
 }
 
 .drawer-footer {

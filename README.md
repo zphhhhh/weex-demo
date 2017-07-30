@@ -16,6 +16,9 @@ npm run dev
 npm run serve
 ```
 
+- 预览 Web 端：https://zphhhhh.github.io/weex-demo/index.html
+- 预览 Weex 端：使用 Android Studio 打开功能并运行
+
 ## 文件结构
 
 * `src/*`: 源码

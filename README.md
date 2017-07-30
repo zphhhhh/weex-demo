@@ -16,8 +16,10 @@ npm run dev
 npm run serve
 ```
 
-- 预览 Web 端：https://zphhhhh.github.io/weex-demo/index.html
-- 预览 Weex 端：使用 Android Studio 打开功能并运行
+- 预览 Web 端：  
+https://zphhhhh.github.io/weex-demo/index.html
+- 预览 Weex 端：  
+使用 Android Studio 打开功能并运行
 
 ## 文件结构
 
@@ -66,7 +68,7 @@ npm run serve
 - Android 图片无法加载？  
 原因：需自己手动实现图片加载，这里用了 Picasso 开源库，请移步：https://github.com/square/picasso
 - Web 端正常而 Weex 端布局出错？  
-原因：由于平台问题，Weex 端不支持很多 Web 端的 CSS 属性，比如`border: 1px solid #ccc`要分开写，`flex`属性要写完整等等。
+原因：由于平台问题，Weex 端不支持很多 Web 端的 CSS 属性，比如`border: 1px solid #ccc`要分开写，`flex`布局默认值不同最好写完整等等。
 
 ## 其他
 - 项目中使用的图片出自网上资源，仅做学习之用。

@@ -134,7 +134,7 @@
 
 
 	// module
-	exports.push([module.id, "\n.app {\r\n    flex-direction: column;\r\n    align-items: stretch;\r\n    background: #f7f7f7;\r\n    padding-top: 20px;\r\n    padding-bottom: 20px;\n}\n.icon-container {\r\n    background: white;\r\n    align-items: center;\r\n    margin-bottom: 20px;\r\n    border-top: 1px solid #ccc;\r\n    border-bottom: 1px solid #ccc;\n}\n.icon-container--last {\r\n    margin-bottom: 0;\n}\n.icon-drawer {\r\n    border-top: 1px solid #ccc;\n}\n.icon-drawer--first {\r\n    border-top: 0;\n}\n.drawer-footer {\r\n    border-top: 1px solid #ccc;\n}\r\n", ""]);
+	exports.push([module.id, "\n.app {\r\n    flex: 1;\r\n    flex-direction: column;\r\n    align-items: stretch;\r\n    background-color: #f7f7f7;\n}\n.icon-container {\r\n    background: white;\r\n    align-items: stretch;\r\n    margin-bottom: 20px;\r\n    border-top-width: 1px;\r\n    border-top-color: #ccc;\r\n    border-bottom-width: 1px;\r\n    border-bottom-color: #ccc;\n}\n.icon-container--last {\r\n    margin-bottom: 0;\n}\n.icon-drawer {\r\n    flex: 1;\r\n    border-top-width: 1px;\r\n    border-top-color: #ccc;\n}\n.icon-drawer--first {\r\n    border-top-width: 0;\n}\n.drawer-footer {\r\n    border-top-width: 1px;\r\n    border-top-color: #ccc;\n}\r\n", ""]);
 
 	// exports
 
@@ -554,7 +554,7 @@
 	        return {
 	            drawers: _drawerData2.default,
 	            adminDrawers: _adminData2.default,
-	            adminNews: ['床前明月光，疑是地上霜~~~', '举头望明月，低头~思故乡~~~', '哈哈哈哈，这是黑化后的亚瑟哈哈哈哈哈哈哈哈~~~']
+	            adminNews: ['床前明月光，疑是地上霜~~~', '举头望明月，低头~思故乡~~~', '哈哈哈哈，这是黑化后的亚瑟是黑化后的亚瑟哈哈哈哈哈哈~~~']
 	        };
 	    },
 
@@ -637,7 +637,7 @@
 
 
 	// module
-	exports.push([module.id, "\n.container[data-v-ea509ccc] {\r\n    flex-direction: column;\r\n    align-items: stretch;\r\n    align-content: flex-start;\n}\n.header[data-v-ea509ccc] {\r\n    flex-direction: row;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    margin-top: 20px;\r\n    padding-left: 10px;\r\n    padding-right: 10px;\n}\n.aside-text[data-v-ea509ccc] {\r\n    color: #666;\r\n    font-size: 28px;\n}\n.body[data-v-ea509ccc] {\r\n    width: 720px;\r\n    height: 188px;\r\n    flex-direction: row;\r\n    flex-wrap: wrap;\r\n    justify-content: flex-start;\r\n    align-items: center;\r\n    overflow: hidden;\n}\n.icon-item[data-v-ea509ccc] {\r\n    margin: 20px;\n}\n.footer[data-v-ea509ccc] {\r\n    width: 720px;\r\n    padding-left: 10px;\r\n    padding-right: 10px;\n}\r\n", ""]);
+	exports.push([module.id, "\n.container[data-v-ea509ccc] {\r\n    flex-direction: column;\r\n    align-items: stretch;\r\n    align-content: flex-start;\r\n    background-color: white;\r\n    padding-left: 10px;\r\n    padding-right: 10px;\n}\n.header[data-v-ea509ccc] {\r\n    flex-direction: row;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    margin-top: 20px;\r\n    padding-left: 10px;\r\n    padding-right: 10px;\n}\n.header-title[data-v-ea509ccc] {\r\n    font-size: 28px;\n}\n.aside-text[data-v-ea509ccc] {\r\n    color: #666;\r\n    font-size: 28px;\n}\n.body[data-v-ea509ccc] {\r\n    width: 722px;\r\n    /* height: 188px; */\r\n    flex-direction: row;\r\n    flex-wrap: wrap;\r\n    justify-content: flex-start;\r\n    align-items: center;\r\n    overflow: hidden;\n}\n.icon-item[data-v-ea509ccc] {\r\n    margin: 20px;\n}\n.footer[data-v-ea509ccc] {\r\n    /* width: 720px; */\r\n    padding-left: 10px;\r\n    padding-right: 10px;\n}\r\n", ""]);
 
 	// exports
 
@@ -705,20 +705,18 @@
 	            }
 	        },
 	        onMoreClick: function onMoreClick() {
-	            var _this = this;
-
 	            console.log('onMoreClick');
 	            var body = this.$refs.body;
 
 	            switch (this.status) {
 	                case _const2.default.SHOW_TEXT:
 	                    this.status = _const2.default.HIDE_TEXT;
-	                    this.animator(body, { height: this.getHeight(this.data.length) + 'px' });
+	                    // this.animator(body, {height: `${this.getHeight(this.data.length)}px`});
 	                    break;
 	                case _const2.default.HIDE_TEXT:
-	                    this.animator(body, { height: this.getHeight(this.limit) + 'px' }, function () {
-	                        _this.status = _const2.default.SHOW_TEXT;
-	                    });
+	                    // this.animator(body, {height: `${this.getHeight(this.limit)}px`}, () => {
+	                    this.status = _const2.default.SHOW_TEXT;
+	                    // });
 	                    break;
 	            }
 	        },
@@ -1003,7 +1001,7 @@
 
 
 	// module
-	exports.push([module.id, "\n.container[data-v-214b4db8] {\r\n    flex-direction: row;\r\n    justify-content: flex-start;\r\n    align-items: center;\r\n    padding-top: 20px;\r\n    padding-bottom: 20px;\r\n    height: 82px;\n}\n.title[data-v-214b4db8] {\r\n    color: #0b98d8;\r\n    border: 2px solid #0b98d8;\r\n    border-radius: 8px;\r\n    padding-top: 4px;\r\n    padding-bottom: 4px;\r\n    padding-left: 14px;\r\n    padding-right: 14px;\r\n    font-size: 22px;\n}\n.content[data-v-214b4db8] {\r\n    flex: 1;\r\n    height: 40px;\r\n    margin-left: 20px;\r\n    text-align: left;\n}\n.content-item[data-v-214b4db8] {\r\n    align-self: flex-start;\n}\n.content-text[data-v-214b4db8] {\r\n    text-align: left;\r\n    text-overflow: ellipsis;\r\n    font-size: 28px;\r\n    height: 28px;\r\n    line-height: 28px;\r\n    lines: 1;\r\n    /* white-space: nowrap;\r\n    overflow: hidden; */\r\n    text-overflow: ellipsis;\n}\n.aside[data-v-214b4db8] {\r\n    color: #666;\r\n    font-size: 28px;\r\n    height: 28px;\r\n    line-height: 28px;\n}\r\n", ""]);
+	exports.push([module.id, "\n.container[data-v-214b4db8] {\r\n    flex-direction: row;\r\n    justify-content: space-between;\r\n    align-items: stretch;\r\n    padding-top: 20px;\r\n    padding-bottom: 20px;\r\n    height: 82px;\n}\n.title[data-v-214b4db8] {\r\n    color: #0b98d8;\r\n    border-width: 2px;\r\n    border-color: #0b98d8;\r\n    border-radius: 8px;\r\n    padding-top: 4px;\r\n    padding-bottom: 4px;\r\n    padding-left: 14px;\r\n    padding-right: 14px;\r\n    font-size: 22px;\n}\n.content[data-v-214b4db8] {\r\n    flex: 1;\r\n    flex-direction: row;\r\n    align-items: flex-end;\r\n    margin-left: 20px;\r\n    margin-right: 20px;\r\n    height: 42px;\n}\n.content-item[data-v-214b4db8] {\n}\n.content-text[data-v-214b4db8] {\r\n    text-align: left;\r\n    text-overflow: ellipsis;\r\n    font-size: 28px;\r\n    line-height: 42px;\r\n    lines: 1;\r\n    /* white-space: nowrap;\r\n    overflow: hidden;  */\r\n    text-overflow: ellipsis;\n}\n.aside[data-v-214b4db8] {\r\n    color: #666;\r\n    font-size: 28px;\r\n    line-height: 42px;\n}\r\n", ""]);
 
 	// exports
 
@@ -1029,6 +1027,10 @@
 	//
 	//
 	//
+	//
+	//
+	//
+	//
 
 	exports.default = {
 	    props: ['title', 'data']
@@ -1041,9 +1043,9 @@
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: "container"
-	  }, [_c('text', {
+	  }, [_c('div', [_c('text', {
 	    staticClass: "title"
-	  }, [_vm._v(_vm._s(_vm.title || '公告'))]), _vm._v(" "), _c('slider', {
+	  }, [_vm._v(_vm._s(_vm.title || '公告'))])]), _vm._v(" "), _c('slider', {
 	    staticClass: "content",
 	    attrs: {
 	      "interval": "3000",
@@ -1056,9 +1058,9 @@
 	    }, [_c('text', {
 	      staticClass: "content-text"
 	    }, [_vm._v(_vm._s(item))])])
-	  })), _vm._v(" "), _c('text', {
+	  })), _vm._v(" "), _c('div', [_c('text', {
 	    staticClass: "aside"
-	  }, [_vm._v("更多")])], 1)
+	  }, [_vm._v("更多")])])], 1)
 	},staticRenderFns: []}
 	module.exports.render._withStripped = true
 	if (false) {
@@ -1202,6 +1204,18 @@
 	        click: function click(url) {
 	            console.log(url);
 	        }
+	    }, {
+	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
+	        title: '每日打卡4',
+	        click: function click(url) {
+	            console.log(url);
+	        }
+	    }, {
+	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
+	        title: '每日打卡5',
+	        click: function click(url) {
+	            console.log(url);
+	        }
 	    }],
 	    limit: 4
 	}, {
@@ -1268,19 +1282,19 @@
 	exports.default = [{
 	    title: '管理员控制台',
 	    data: [{
-	        url: 'http://msqq.com/d/file/appicon/2014-05-02/1fe738f4291dd806d03e039cc5d60afb.png',
+	        url: 'https://cdn3.iconfinder.com/data/icons/food-set-3/91/Food_C206-128.png',
 	        title: '增加学分',
 	        click: function click(url) {
 	            console.log(url);
 	        }
 	    }, {
-	        url: 'http://msqq.com/d/file/appicon/2014-05-02/1fe738f4291dd806d03e039cc5d60afb.png',
+	        url: 'https://cdn3.iconfinder.com/data/icons/food-set-3/91/Food_C206-128.png',
 	        title: '提高成绩',
 	        click: function click(url) {
 	            console.log(url);
 	        }
 	    }, {
-	        url: 'http://msqq.com/d/file/appicon/2014-05-02/94f8a0317f18ba387d19199808f545f2.png',
+	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
 	        title: '发奖学金'
 	    }, {
 	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
@@ -1289,7 +1303,7 @@
 	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
 	        title: '每日打卡5'
 	    }, {
-	        url: 'http://msqq.com/d/file/appicon/2014-05-02/1fe738f4291dd806d03e039cc5d60afb.png',
+	        url: 'https://cdn3.iconfinder.com/data/icons/food-set-3/91/Food_C206-128.png',
 	        title: '每日打卡2',
 	        click: function click(url) {
 	            console.log(url);
@@ -1304,7 +1318,7 @@
 	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
 	        title: '每日打卡5'
 	    }, {
-	        url: 'http://msqq.com/d/file/appicon/2014-05-02/1fe738f4291dd806d03e039cc5d60afb.png',
+	        url: 'https://cdn3.iconfinder.com/data/icons/food-set-3/91/Food_C206-128.png',
 	        title: '每日打卡2',
 	        click: function click(url) {
 	            console.log(url);

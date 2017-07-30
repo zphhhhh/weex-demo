@@ -2,7 +2,7 @@
     <scroller class="app">
         <div class="icon-container">
             <icon-drawer class="icon-drawer" :class="{'icon-drawer--first': index === 0}" v-for="(drawer, index) in adminDrawers" :key="drawer.title"   :title="drawer.title" :data="drawer.data" :limit="drawer.limit">
-                 <div slot="footer" class="drawer-footer">
+                <div slot="footer" class="drawer-footer">
                     <slider-news title="公告" :data="adminNews"></slider-news>
                 </div>
             </icon-drawer>
@@ -30,7 +30,7 @@ export default {
             adminNews: [
                 '床前明月光，疑是地上霜~~~',
                 '举头望明月，低头~思故乡~~~',
-                '哈哈哈哈，这是黑化后的亚瑟哈哈哈哈哈哈哈哈~~~',
+                '哈哈哈哈，这是黑化后的亚瑟是黑化后的亚瑟哈哈哈哈哈哈~~~',
             ]
         }
     },
@@ -43,19 +43,20 @@ export default {
 
 <style>
 .app {
+    flex: 1;
     flex-direction: column;
     align-items: stretch;
-    background: #f7f7f7;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    background-color: #f7f7f7;
 }
 
 .icon-container {
     background: white;
-    align-items: center;
+    align-items: stretch;
     margin-bottom: 20px;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    border-top-width: 1px;
+    border-top-color: #ccc;
+    border-bottom-width: 1px;
+    border-bottom-color: #ccc;
 }
 
 .icon-container--last {
@@ -63,14 +64,17 @@ export default {
 }
 
 .icon-drawer {
-    border-top: 1px solid #ccc;
+    flex: 1;
+    border-top-width: 1px;
+    border-top-color: #ccc;
 }
 
 .icon-drawer--first {
-    border-top: 0;
+    border-top-width: 0;
 }
 
 .drawer-footer {
-    border-top: 1px solid #ccc;
+    border-top-width: 1px;
+    border-top-color: #ccc;
 }
 </style>

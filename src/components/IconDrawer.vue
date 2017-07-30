@@ -47,20 +47,20 @@ export default {
             const body = this.$refs.body;
             
             switch(this.status) {
-                case CONST.SHOW_TEXT: 
+                case CONST.SHOW_TEXT:
                     this.status = CONST.HIDE_TEXT;
-                    this.animator(body, {height: `${this.getHeight(this.data.length)}px`});
+                    // this.animator(body, {height: `${this.getHeight(this.data.length)}px`});
                     break;
                 case CONST.HIDE_TEXT:
-                    this.animator(body, {height: `${this.getHeight(this.limit)}px`}, () => {
+                    // this.animator(body, {height: `${this.getHeight(this.limit)}px`}, () => {
                         this.status = CONST.SHOW_TEXT;
-                    });
+                    // });
                     break;
             }
         },
         getHeight(length) {
             const per = 188;
-            console.log(Math.ceil(length / 4) * per)
+            console.log(Math.ceil(length / 4) * per);
             return Math.ceil(length / 4) * per;
         },
         animator(el, styles, callback) {
@@ -80,6 +80,9 @@ export default {
     flex-direction: column;
     align-items: stretch;
     align-content: flex-start;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .header {
@@ -91,14 +94,18 @@ export default {
     padding-right: 10px;
 }
 
+.header-title {
+    font-size: 28px;
+}
+
 .aside-text {
     color: #666;
     font-size: 28px;
 }
 
 .body {
-    width: 720px;
-    height: 188px;
+    width: 722px;
+    /* height: 188px; */
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -111,7 +118,7 @@ export default {
 }
 
 .footer {
-    width: 720px;
+    /* width: 720px; */
     padding-left: 10px;
     padding-right: 10px;
 }

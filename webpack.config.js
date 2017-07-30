@@ -11,6 +11,8 @@
 var path = require('path')
 var webpack = require('webpack')
 
+var androidAssets = path.resolve('android/app/src/main/assets')
+
 var bannerPlugin = new webpack.BannerPlugin(
   '// { "framework": "Vue" }\n',
   { raw: true }
@@ -83,6 +85,7 @@ webConfig.output.filename = '[name].web.js'
 webConfig.module.loaders[1].loaders.push('vue')
 
 var weexConfig = getBaseConfig()
+weexConfig.output.path = androidAssets
 weexConfig.output.filename = '[name].weex.js'
 weexConfig.module.loaders[1].loaders.push('weex')
 

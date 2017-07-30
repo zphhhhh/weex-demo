@@ -154,6 +154,20 @@ export default [
                     console.log(url)
                 }
             },
+            {
+                url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
+                title: '每日打卡4',
+                click: function (url) {
+                    console.log(url)
+                }
+            },
+            {
+                url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
+                title: '每日打卡5',
+                click: function (url) {
+                    console.log(url)
+                }
+            },
         ],
         limit: 4,
     },

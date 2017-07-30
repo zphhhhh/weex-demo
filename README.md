@@ -2,6 +2,8 @@
 
 > 模仿钉钉工作页面，基本完成
 
+可直接访问 https://zphhhhh.github.io/weex-demo/index.html 预览
+
 ![weex-demo.png](./previews/weex-demo.png)
 
 ## 预览

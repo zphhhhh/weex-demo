@@ -28,7 +28,7 @@ export default {
             drawers: DrawerData,
             adminDrawers: AdminData,
             adminNews: [
-                '窗前明月光，疑是地上霜~~~',
+                '床前明月光，疑是地上霜~~~',
                 '举头望明月，低头~思故乡~~~',
                 '哈哈哈哈，这是黑化后的亚瑟哈哈哈哈哈哈哈哈~~~',
             ]

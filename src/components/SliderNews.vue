@@ -51,7 +51,9 @@ export default {
     height: 42px;
 }
 
-.content-item {}
+.content-item {
+     align-self: flex-start;
+}
 
 .content-text {
     text-align: left;

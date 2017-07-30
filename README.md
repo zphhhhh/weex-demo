@@ -23,6 +23,7 @@ npm run serve
     - `constants`: 存放常量
     - `data`: 存放数据
     - `App.vue`: 页面入口
+* `android`: Android (native for Weex)
 * `app.js`: Weex 入口
 * `index.html`: Weex Web 端预览
 
@@ -59,9 +60,9 @@ npm run serve
     </activity>
 </application>
 ```
-- Android 图片无法加载？
-原因：需自己手动实现，这里使用了 Picasso 开源库，移步：https://github.com/square/picasso
-- Web 端正常而 Weex 端布局出错？
+- Android 图片无法加载？  
+原因：需自己手动实现图片加载，这里用了 Picasso 开源库，请移步：https://github.com/square/picasso
+- Web 端正常而 Weex 端布局出错？  
 原因：由于平台问题，Weex 端不支持很多 Web 端的 CSS 属性，比如`border: 1px solid #ccc`要分开写，`flex`属性要写完整等等。
 
 ## 其他

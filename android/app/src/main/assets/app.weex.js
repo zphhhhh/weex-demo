@@ -635,6 +635,9 @@
 	    "marginRight": 20,
 	    "height": 42
 	  },
+	  "content-item": {
+	    "alignSelf": "flex-start"
+	  },
 	  "content-text": {
 	    "textAlign": "left",
 	    "textOverflow": "ellipsis",

@@ -45,7 +45,7 @@ https://zphhhhh.github.io/weex-demo/index.html
 - 子组件好像不支持`:class`绑定？  
 原因：后发现问题是，父组件若使用了`<style scoped>`，则不支持给子组件使用`:class`绑定，这点是与 Vue 不同的。后去掉了父组件的 `scoped`。
 - 集成到 Android 开发环境时不显示 Weex 页面？  
-原因：使用 Android Studio 新建工程时在`AndroidManifest.xml`配置文件中的`Application`下没有加入`android:name`属性，加入之后类似下面：
+原因：使用 Android Studio 新建工程时在`AndroidManifest.xml`配置文件中的`Application`下没有加入`android:name`属性（这个坑填了很久，官方文档没有说明。。后来细想，其实 React Native 也是类似的。。）加入之后类似下面：
 ```xml
 <!-- 在下面加入 `android:name=".WXApplication"`  -->
 <application

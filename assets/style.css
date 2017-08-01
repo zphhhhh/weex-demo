@@ -7,5 +7,5 @@ h1 { text-align: center; }
 .mock-phone  .camera { position: absolute; width: 14px; height: 14px; border-radius: 14px; background: #afddff; border: 1px solid #0088fb; top: 23px; left: 94px; }
 .mock-phone  .earpiece { position: absolute; width: 70px; height: 8px; border-radius: 8px; background: #afddff; border: 1px solid #0088fb; top: 26px; left: 124px; }
 .mock-phone .home-btn { position: absolute; width: 56px; height: 56px; border-radius: 56px; background: #afddff; border: 1px solid #0088fb; bottom: 14px; left: 50%; margin-left: -28px; }
-#qrcode { align-self: center; margin-left: 50px; display: none}
+#qrcode { align-self: center; margin-left: 50px;}
 #qrcode .bundle-url { width: 480px; line-height: 1.5; word-break: break-all; }

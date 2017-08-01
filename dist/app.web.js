@@ -541,7 +541,7 @@
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _Hello = __webpack_require__(35);
+	var _Hello = __webpack_require__(34);
 
 	var _Hello2 = _interopRequireDefault(_Hello);
 
@@ -3272,7 +3272,7 @@
 	  /* script */
 	  __webpack_require__(15),
 	  /* template */
-	  __webpack_require__(34),
+	  __webpack_require__(33),
 	  /* scopeId */
 	  null,
 	  /* cssModules */
@@ -3356,16 +3356,14 @@
 
 	var _SliderNews2 = _interopRequireDefault(_SliderNews);
 
-	var _drawerData = __webpack_require__(32);
-
-	var _drawerData2 = _interopRequireDefault(_drawerData);
-
-	var _adminData = __webpack_require__(33);
+	var _adminData = __webpack_require__(32);
 
 	var _adminData2 = _interopRequireDefault(_adminData);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	var stream = weex.requireModule('stream');
+	// import DrawerData from '../data/drawerData';
 	//
 	//
 	//
@@ -3385,10 +3383,11 @@
 	//
 	//
 
+	// import axios from 'axios'; 在 weex 中使用 stream 代替 axios
 	exports.default = {
 	    data: function data() {
 	        return {
-	            drawers: _drawerData2.default,
+	            drawers: [], // 从服务器请求数据
 	            adminDrawers: _adminData2.default,
 	            adminNews: ['床前明月光，疑是地上霜~~~', '举头望明月，低头~思故乡~~~', '哈哈哈哈，这是黑化后的亚瑟是黑化后的亚瑟哈哈哈哈哈哈~~~']
 	        };
@@ -3397,6 +3396,24 @@
 	    components: {
 	        IconDrawer: _IconDrawer2.default,
 	        SliderNews: _SliderNews2.default
+	    },
+	    created: function created() {
+	        var _this = this;
+
+	        var url = 'https://zphhhhh.github.io/weex-demo/src/data/drawerData.json';
+	        var success = function success(res) {
+	            _this.drawers = res.data;
+	        };
+
+	        stream.fetch({
+	            url: url,
+	            method: 'GET',
+	            type: 'json'
+	        }, success);
+	        // axios.get(url).then(res => {
+	        //     this.res = { zph: 'hello' };;
+	        //     this.drawers = res.data;
+	        // });
 	    }
 	};
 
@@ -3918,160 +3935,6 @@
 	    value: true
 	});
 	exports.default = [{
-	    title: '已开课程',
-	    data: [{
-	        url: 'http://msqq.com/d/file/appicon/2014-05-02/1fe738f4291dd806d03e039cc5d60afb.png',
-	        title: '每日打卡1',
-	        router: 'Hello'
-	    }, {
-	        url: 'http://msqq.com/d/file/appicon/2014-05-02/1fe738f4291dd806d03e039cc5d60afb.png',
-	        title: '每日打卡2',
-	        router: 'Hello'
-	    }, {
-	        url: 'http://msqq.com/d/file/appicon/2014-05-02/94f8a0317f18ba387d19199808f545f2.png',
-	        title: '每日打卡3'
-	    }, {
-	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
-	        title: '每日打卡4'
-	    }, {
-	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
-	        title: '每日打卡5'
-	    }, {
-	        url: 'http://msqq.com/d/file/appicon/2014-05-02/1fe738f4291dd806d03e039cc5d60afb.png',
-	        title: '每日打卡2',
-	        router: 'Hello'
-	    }, {
-	        url: 'http://msqq.com/d/file/appicon/2014-05-02/94f8a0317f18ba387d19199808f545f2.png',
-	        title: '每日打卡3'
-	    }, {
-	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
-	        title: '每日打卡4'
-	    }, {
-	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
-	        title: '每日打卡5'
-	    }, {
-	        url: 'http://msqq.com/d/file/appicon/2014-05-02/1fe738f4291dd806d03e039cc5d60afb.png',
-	        title: '每日打卡2',
-	        router: 'Hello'
-	    }, {
-	        url: 'http://msqq.com/d/file/appicon/2014-05-02/94f8a0317f18ba387d19199808f545f2.png',
-	        title: '每日打卡3'
-	    }, {
-	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
-	        title: '每日打卡4'
-	    }, {
-	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
-	        title: '每日打卡5'
-	    }],
-	    limit: 4
-	}, {
-	    title: '考试成绩',
-	    data: [{
-	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
-	        title: '每日打卡1',
-	        router: 'Hello'
-	    }, {
-	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
-	        title: '每日打卡2',
-	        router: 'Hello'
-	    }, {
-	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
-	        title: '每日打卡3',
-	        router: 'Hello'
-	    }],
-	    limit: 4
-	}, {
-	    title: '社团活动',
-	    data: [{
-	        url: 'http://msqq.com/d/file/appicon/2014-05-02/1fe738f4291dd806d03e039cc5d60afb.png',
-	        title: '每日打卡1',
-	        router: 'Hello'
-	    }, {
-	        url: 'http://msqq.com/d/file/appicon/2014-05-02/1fe738f4291dd806d03e039cc5d60afb.png',
-	        title: '每日打卡2',
-	        router: 'Hello'
-	    }, {
-	        url: 'http://msqq.com/d/file/appicon/2014-05-02/1fe738f4291dd806d03e039cc5d60afb.png',
-	        title: '每日打卡3',
-	        router: 'Hello'
-	    }],
-	    limit: 4
-	}, {
-	    title: '学术交流',
-	    data: [{
-	        url: 'http://msqq.com/d/file/appicon/2014-05-02/1fe738f4291dd806d03e039cc5d60afb.png',
-	        title: '每日打卡2',
-	        router: 'Hello'
-	    }, {
-	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
-	        title: '每日打卡3',
-	        router: 'Hello'
-	    }, {
-	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
-	        title: '每日打卡4',
-	        router: 'Hello'
-	    }, {
-	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
-	        title: '每日打卡5',
-	        router: 'Hello'
-	    }, {
-	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
-	        title: '每日打卡4',
-	        router: 'Hello'
-	    }, {
-	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
-	        title: '每日打卡5',
-	        router: 'Hello'
-	    }],
-	    limit: 4
-	}, {
-	    title: '聚餐啦啦啦',
-	    data: [{
-	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
-	        title: '每日打卡1',
-	        router: 'Hello'
-	    }, {
-	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
-	        title: '每日打卡2',
-	        router: 'Hello'
-	    }],
-	    limit: 4
-	}, {
-	    title: '聚餐啦啦啦',
-	    data: [{
-	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
-	        title: '每日打卡1',
-	        router: 'Hello'
-	    }, {
-	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
-	        title: '每日打卡2',
-	        router: 'Hello'
-	    }, {
-	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
-	        title: '每日打卡3',
-	        router: 'Hello'
-	    }, {
-	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
-	        title: '每日打卡4',
-	        router: 'Hello'
-	    }, {
-	        url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
-	        title: '每日打卡5',
-	        router: 'Hello'
-	    }],
-	    limit: 4
-	}];
-
-/***/ }),
-/* 33 */
-/***/ (function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.default = [{
 	    title: '管理员控制台',
 	    data: [{
 	        url: 'https://cdn3.iconfinder.com/data/icons/food-set-3/91/Food_C206-128.png',
@@ -4113,7 +3976,7 @@
 	}];
 
 /***/ }),
-/* 34 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -4183,18 +4046,18 @@
 	}
 
 /***/ }),
-/* 35 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	
 	/* styles */
-	__webpack_require__(36)
+	__webpack_require__(35)
 
 	var Component = __webpack_require__(7)(
 	  /* script */
-	  __webpack_require__(38),
+	  __webpack_require__(37),
 	  /* template */
-	  __webpack_require__(39),
+	  __webpack_require__(38),
 	  /* scopeId */
 	  "data-v-7c9697a8",
 	  /* cssModules */
@@ -4221,13 +4084,13 @@
 
 
 /***/ }),
-/* 36 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(37);
+	var content = __webpack_require__(36);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	if(content.locals) module.exports = content.locals;
 	// add the styles to the DOM
@@ -4247,7 +4110,7 @@
 	}
 
 /***/ }),
-/* 37 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -4261,7 +4124,7 @@
 
 
 /***/ }),
-/* 38 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4290,7 +4153,7 @@
 	//
 
 /***/ }),
-/* 39 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

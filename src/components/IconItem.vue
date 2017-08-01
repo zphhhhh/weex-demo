@@ -12,7 +12,6 @@ export default {
     props: ['url', 'title', 'router'],
     methods: {
         oItemClick() {
-            debugger
             if (this.router) {
                 router.push(this.router)
             }

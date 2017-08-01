@@ -79,7 +79,7 @@
 	  /* cssModules */
 	  null
 	)
-	Component.options.__file = "E:\\weexs\\weex-demo\\src\\App.vue"
+	Component.options.__file = "E:\\git\\zphhhhh\\weex-demo\\src\\App.vue"
 	if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 	if (Component.options.functional) {console.error("[vue-loader] App.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -582,7 +582,7 @@
 	  /* cssModules */
 	  null
 	)
-	Component.options.__file = "E:\\weexs\\weex-demo\\src\\components\\IconDrawer.vue"
+	Component.options.__file = "E:\\git\\zphhhhh\\weex-demo\\src\\components\\IconDrawer.vue"
 	if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 	if (Component.options.functional) {console.error("[vue-loader] IconDrawer.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -754,7 +754,7 @@
 	  /* cssModules */
 	  null
 	)
-	Component.options.__file = "E:\\weexs\\weex-demo\\src\\components\\IconItem.vue"
+	Component.options.__file = "E:\\git\\zphhhhh\\weex-demo\\src\\components\\IconItem.vue"
 	if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 	if (Component.options.functional) {console.error("[vue-loader] IconItem.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -946,7 +946,7 @@
 	  /* cssModules */
 	  null
 	)
-	Component.options.__file = "E:\\weexs\\weex-demo\\src\\components\\SliderNews.vue"
+	Component.options.__file = "E:\\git\\zphhhhh\\weex-demo\\src\\components\\SliderNews.vue"
 	if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 	if (Component.options.functional) {console.error("[vue-loader] SliderNews.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -1001,7 +1001,7 @@
 
 
 	// module
-	exports.push([module.id, "\n.container[data-v-214b4db8] {\r\n    flex-direction: row;\r\n    justify-content: space-between;\r\n    align-items: stretch;\r\n    padding-top: 20px;\r\n    padding-bottom: 20px;\r\n    height: 82px;\n}\n.title[data-v-214b4db8] {\r\n    color: #0b98d8;\r\n    border-width: 2px;\r\n    border-color: #0b98d8;\r\n    border-radius: 8px;\r\n    padding-top: 4px;\r\n    padding-bottom: 4px;\r\n    padding-left: 14px;\r\n    padding-right: 14px;\r\n    font-size: 22px;\n}\n.content[data-v-214b4db8] {\r\n    flex: 1;\r\n    flex-direction: row;\r\n    align-items: flex-end;\r\n    margin-left: 20px;\r\n    margin-right: 20px;\r\n    height: 42px;\n}\n.content-item[data-v-214b4db8] {\r\n     align-self: flex-start;\n}\n.content-text[data-v-214b4db8] {\r\n    text-align: left;\r\n    text-overflow: ellipsis;\r\n    font-size: 28px;\r\n    line-height: 42px;\r\n    lines: 1;\r\n    /* white-space: nowrap;\r\n    overflow: hidden;  */\r\n    text-overflow: ellipsis;\n}\n.aside[data-v-214b4db8] {\r\n    color: #666;\r\n    font-size: 28px;\r\n    line-height: 42px;\n}\r\n", ""]);
+	exports.push([module.id, "\n.container[data-v-214b4db8] {\r\n    flex-direction: row;\r\n    justify-content: space-between;\r\n    align-items: stretch;\r\n    padding-top: 20px;\r\n    padding-bottom: 20px;\r\n    height: 82px;\n}\n.title[data-v-214b4db8] {\r\n    color: #0b98d8;\r\n    border-width: 2px;\r\n    border-color: #0b98d8;\r\n    border-radius: 8px;\r\n    padding-top: 4px;\r\n    padding-bottom: 4px;\r\n    padding-left: 14px;\r\n    padding-right: 14px;\r\n    font-size: 22px;\n}\n.content[data-v-214b4db8] {\r\n    flex: 1;\r\n    flex-direction: row;\r\n    align-items: flex-end;\r\n    margin-left: 20px;\r\n    margin-right: 20px;\r\n    height: 42px;\n}\n.content-item[data-v-214b4db8] {\r\n    align-self: flex-start;\n}\n.content-text[data-v-214b4db8] {\r\n    width: 522px;\r\n    text-align: left;\r\n    text-overflow: ellipsis;\r\n    font-size: 28px;\r\n    line-height: 42px;\r\n    lines: 1;\r\n    /* white-space: nowrap;\r\n    overflow: hidden;  */\r\n    text-overflow: ellipsis;\n}\n.aside[data-v-214b4db8] {\r\n    color: #666;\r\n    font-size: 28px;\r\n    line-height: 42px;\n}\r\n", ""]);
 
 	// exports
 

@@ -88,10 +88,10 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "E:\\weexs\\weex-demo\\src\\App.vue"
+	__vue_options__.__file = "E:\\git\\zphhhhh\\weex-demo\\src\\App.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	__vue_options__._scopeId = "data-v-6495bcd9"
+	__vue_options__._scopeId = "data-v-015b7f6f"
 	__vue_options__.style = __vue_options__.style || {}
 	__vue_styles__.forEach(function (module) {
 	  for (var name in module) {
@@ -231,10 +231,10 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "E:\\weexs\\weex-demo\\src\\components\\IconDrawer.vue"
+	__vue_options__.__file = "E:\\git\\zphhhhh\\weex-demo\\src\\components\\IconDrawer.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	__vue_options__._scopeId = "data-v-c8f46a70"
+	__vue_options__._scopeId = "data-v-10f453de"
 	__vue_options__.style = __vue_options__.style || {}
 	__vue_styles__.forEach(function (module) {
 	  for (var name in module) {
@@ -414,10 +414,10 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "E:\\weexs\\weex-demo\\src\\components\\IconItem.vue"
+	__vue_options__.__file = "E:\\git\\zphhhhh\\weex-demo\\src\\components\\IconItem.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	__vue_options__._scopeId = "data-v-23174faa"
+	__vue_options__._scopeId = "data-v-d8bdb380"
 	__vue_options__.style = __vue_options__.style || {}
 	__vue_styles__.forEach(function (module) {
 	  for (var name in module) {
@@ -586,10 +586,10 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "E:\\weexs\\weex-demo\\src\\components\\SliderNews.vue"
+	__vue_options__.__file = "E:\\git\\zphhhhh\\weex-demo\\src\\components\\SliderNews.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	__vue_options__._scopeId = "data-v-00087252"
+	__vue_options__._scopeId = "data-v-7576fb68"
 	__vue_options__.style = __vue_options__.style || {}
 	__vue_styles__.forEach(function (module) {
 	  for (var name in module) {
@@ -639,6 +639,7 @@
 	    "alignSelf": "flex-start"
 	  },
 	  "content-text": {
+	    "width": 522,
 	    "textAlign": "left",
 	    "textOverflow": "ellipsis",
 	    "fontSize": 28,

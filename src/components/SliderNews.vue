@@ -52,10 +52,11 @@ export default {
 }
 
 .content-item {
-     align-self: flex-start;
+    align-self: flex-start;
 }
 
 .content-text {
+    width: 522px;
     text-align: left;
     text-overflow: ellipsis;
     font-size: 28px;

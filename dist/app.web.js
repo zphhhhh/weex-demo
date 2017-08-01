@@ -3427,7 +3427,7 @@
 
 
 	// module
-	exports.push([module.id, "\n.container[data-v-ea509ccc] {\r\n    flex-direction: column;\r\n    align-items: stretch;\r\n    align-content: flex-start;\r\n    background-color: white;\r\n    padding-left: 10px;\r\n    padding-right: 10px;\n}\n.header[data-v-ea509ccc] {\r\n    flex-direction: row;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    margin-top: 20px;\r\n    padding-left: 10px;\r\n    padding-right: 10px;\n}\n.header-title[data-v-ea509ccc] {\r\n    font-size: 28px;\n}\n.aside-text[data-v-ea509ccc] {\r\n    color: #666;\r\n    font-size: 28px;\n}\n.body[data-v-ea509ccc] {\r\n    width: 722px;\r\n    /* height: 188px; */\r\n    flex-direction: row;\r\n    flex-wrap: wrap;\r\n    justify-content: flex-start;\r\n    align-items: center;\r\n    overflow: hidden;\n}\n.icon-item[data-v-ea509ccc] {\r\n    margin: 20px;\n}\n.footer[data-v-ea509ccc] {\r\n    /* width: 720px; */\r\n    padding-left: 10px;\r\n    padding-right: 10px;\n}\r\n", ""]);
+	exports.push([module.id, "\n.container[data-v-ea509ccc] {\r\n    flex-direction: column;\r\n    align-items: stretch;\r\n    align-content: flex-start;\r\n    background-color: white;\r\n    padding-left: 10px;\r\n    padding-right: 10px;\n}\n.header[data-v-ea509ccc] {\r\n    flex-direction: row;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    margin-top: 30px;\r\n    margin-bottom: 10px;\r\n    padding-left: 10px;\r\n    padding-right: 10px;\n}\n.header-title[data-v-ea509ccc] {\r\n    font-size: 28px;\n}\n.aside-text[data-v-ea509ccc] {\r\n    color: #666;\r\n    font-size: 28px;\n}\n.body[data-v-ea509ccc] {\r\n    width: 722px;\r\n    /* height: 188px; */\r\n    flex-direction: row;\r\n    flex-wrap: wrap;\r\n    justify-content: flex-start;\r\n    align-items: center;\r\n    overflow: hidden;\n}\n.icon-item[data-v-ea509ccc] {\r\n    margin: 20px;\n}\n.footer[data-v-ea509ccc] {\r\n    /* width: 720px; */\r\n    padding-left: 10px;\r\n    padding-right: 10px;\n}\r\n", ""]);
 
 	// exports
 
@@ -3594,7 +3594,7 @@
 
 
 	// module
-	exports.push([module.id, "\n.container[data-v-04f8c2fc] {\r\n    justify-content: space-around;\r\n    align-items: center;\n}\n.icon[data-v-04f8c2fc] {\r\n    width: 88px;\r\n    height: 88px;\n}\n.title[data-v-04f8c2fc] {\r\n    display: block;\r\n    margin-top: 10px;\r\n    width: 140px;\r\n    height: 38px;\r\n    text-align: center;\r\n    font-size: 28px;\r\n    white-space: nowrap;\r\n    overflow: hidden;\r\n    text-overflow: ellipsis;\n}\r\n", ""]);
+	exports.push([module.id, "\n.container[data-v-04f8c2fc] {\r\n    padding-top: 10px;\r\n    padding-bottom: 10px;\r\n    justify-content: space-around;\r\n    align-items: center;\n}\n.icon[data-v-04f8c2fc] {\r\n    width: 88px;\r\n    height: 88px;\n}\n.title[data-v-04f8c2fc] {\r\n    display: block;\r\n    margin-top: 10px;\r\n    width: 140px;\r\n    height: 38px;\r\n    text-align: center;\r\n    font-size: 28px;\r\n    white-space: nowrap;\r\n    overflow: hidden;\r\n    text-overflow: ellipsis;\n}\r\n", ""]);
 
 	// exports
 

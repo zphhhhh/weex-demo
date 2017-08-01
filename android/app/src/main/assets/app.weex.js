@@ -3051,7 +3051,8 @@
 	    "flexDirection": "row",
 	    "justifyContent": "space-between",
 	    "alignItems": "center",
-	    "marginTop": 20,
+	    "marginTop": 30,
+	    "marginBottom": 10,
 	    "paddingLeft": 10,
 	    "paddingRight": 10
 	  },
@@ -3218,6 +3219,8 @@
 
 	module.exports = {
 	  "container": {
+	    "paddingTop": 10,
+	    "paddingBottom": 10,
 	    "justifyContent": "space-around",
 	    "alignItems": "center"
 	  },

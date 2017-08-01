@@ -84,7 +84,8 @@ export default {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
 }

@@ -24,6 +24,8 @@ export default {
 
 <style scoped>
 .container {
+    padding-top: 10px;
+    padding-bottom: 10px;
     justify-content: space-around;
     align-items: center;
 }

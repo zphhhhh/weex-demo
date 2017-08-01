@@ -20,6 +20,8 @@ npm run serve
 https://zphhhhh.github.io/weex-demo/index.html
 - 预览 Weex 端：  
 使用 Android Studio 打开功能并运行
+- 使用 Playground：
+https://zphhhhh.github.io/weex-demo/android/app/src/main/assets/app.weex.js
 
 ## 文件结构
 

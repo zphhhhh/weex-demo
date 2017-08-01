@@ -22,7 +22,8 @@ import IconDrawer from '../components/IconDrawer.vue';
 import SliderNews from '../components/SliderNews.vue';
 // import DrawerData from '../data/drawerData';
 import AdminData from '../data/adminData';
-const stream = weex.requireModule('stream')
+const stream = weex.requireModule('stream');
+const storage = weex.requireModule('storage');
 
 export default {
     data() {
@@ -41,16 +42,32 @@ export default {
         SliderNews,
     },
     created() {
-        const url = 'https://zphhhhh.github.io/weex-demo/src/data/drawerData.json';
-        const success = res => {
-            this.drawers = res.data;
-        };
+        storage.getItem('drawers', event => {
+            let data = null;
+            try {
+                data = JSON.parse(event.data)
+                if (data.length > 0) {
+                    this.drawers = data;
+                    return ;
+                }
+            } catch (e) {
+                console.log('no data, let\'s get some from serve.');
+            }
 
-        stream.fetch({
-            url,
-            method: 'GET',
-            type: 'json',
-        }, success);
+            const url = 'https://zphhhhh.github.io/weex-demo/src/data/drawerData.json';
+            const success = res => {
+                let data = res.data;
+                this.drawers = data;
+                storage.setItem('drawers', JSON.stringify(data));
+            };
+
+            stream.fetch({
+                url,
+                method: 'GET',
+                type: 'json',
+            }, success);
+        });
+        
         // axios.get(url).then(res => {
         //     this.res = { zph: 'hello' };;
         //     this.drawers = res.data;

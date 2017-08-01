@@ -2991,6 +2991,9 @@
 	//
 
 	// import axios from 'axios'; 在 weex 中使用 stream 代替 axios
+
+	var storage = weex.requireModule('storage');
+
 	exports.default = {
 	    data: function data() {
 	        return {
@@ -3007,16 +3010,32 @@
 	    created: function created() {
 	        var _this = this;
 
-	        var url = 'https://zphhhhh.github.io/weex-demo/src/data/drawerData.json';
-	        var success = function success(res) {
-	            _this.drawers = res.data;
-	        };
+	        storage.getItem('drawers', function (event) {
+	            var data = null;
+	            try {
+	                data = JSON.parse(event.data);
+	                if (data.length > 0) {
+	                    _this.drawers = data;
+	                    return;
+	                }
+	            } catch (e) {
+	                console.log('no data, let\'s get some from serve.');
+	            }
 
-	        stream.fetch({
-	            url: url,
-	            method: 'GET',
-	            type: 'json'
-	        }, success);
+	            var url = 'https://zphhhhh.github.io/weex-demo/src/data/drawerData.json';
+	            var success = function success(res) {
+	                var data = res.data;
+	                _this.drawers = data;
+	                storage.setItem('drawers', JSON.stringify(data));
+	            };
+
+	            stream.fetch({
+	                url: url,
+	                method: 'GET',
+	                type: 'json'
+	            }, success);
+	        });
+
 	        // axios.get(url).then(res => {
 	        //     this.res = { zph: 'hello' };;
 	        //     this.drawers = res.data;

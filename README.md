@@ -18,17 +18,19 @@ npm run serve
 
 - 预览 Web 端：  
 https://zphhhhh.github.io/weex-demo/index.html
-- 预览 Weex 端：  
+- 预览 Weex-Android 端：  
 使用 Android Studio 打开功能并运行
-- 使用 Playground：
+- 使用 Playground：  
 https://zphhhhh.github.io/weex-demo/android/app/src/main/assets/app.weex.js
 
-## 文件结构
+## 主要文件结构
 
 * `src/*`: 源码
     - `components`: 组件
     - `constants`: 存放常量
     - `data`: 存放数据
+    - `routers`: 路由
+    - `views`: 页面
     - `App.vue`: 页面入口
 * `android`: Android (native for Weex)
 * `app.js`: Weex 入口
@@ -81,3 +83,4 @@ https://zphhhhh.github.io/weex-demo/android/app/src/main/assets/app.weex.js
 - 整体上， Weex 仍处于长期开发阶段，官方提供的组件仍然很有限，我自己认为应该处于 alpha 版本，若用在真实项目中，在踩坑方面估计会有不小的难度。
 - Weex 使用 Vue 做前端页面的开发，Vue 的开发体验个人以为要比 React 要更清晰流畅一些，当然这和 React 入门门槛高有一定的联系，也可能是我开发经验少的幻觉...
 - 无论是 Weex 还是 React Native，要想用在实际项目中，工程师一定是要有非常不错的能力，而且要能驾驭 Native Android/iOS，这样想来，门槛还是非常高的，尤其在这前端技术迅速变迁的几年...
+- 学习学习再学习！

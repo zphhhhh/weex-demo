@@ -5,20 +5,17 @@ export default [
             {
                 url: 'https://cdn3.iconfinder.com/data/icons/food-set-3/91/Food_C206-128.png',
                 title: '增加学分',
-                click: function (url) {
-                    console.log(url)
-                }
+                router: '/hello',
             },
             {
                 url: 'https://cdn3.iconfinder.com/data/icons/food-set-3/91/Food_C206-128.png',
                 title: '提高成绩',
-                click: function (url) {
-                    console.log(url)
-                }
+                router: 'hello',
             },
             {
                 url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
                 title: '发奖学金',
+                router: 'Hello',
             },
             {
                 url: 'http://bpic.588ku.com//element_origin_min_pic/17/06/08/dd729cb9adf0d382488ef37b79623931.jpg',
@@ -31,9 +28,7 @@ export default [
             {
                 url: 'https://cdn3.iconfinder.com/data/icons/food-set-3/91/Food_C206-128.png',
                 title: '每日打卡2',
-                click: function (url) {
-                    console.log(url)
-                }
+                router: 'Hello',
             },
             {
                 url: 'http://msqq.com/d/file/appicon/2014-05-02/94f8a0317f18ba387d19199808f545f2.png',
@@ -50,9 +45,7 @@ export default [
             {
                 url: 'https://cdn3.iconfinder.com/data/icons/food-set-3/91/Food_C206-128.png',
                 title: '每日打卡2',
-                click: function (url) {
-                    console.log(url)
-                }
+                router: 'Hello',
             },
         ],
         limit: 4,

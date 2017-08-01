@@ -6,11 +6,16 @@
 </template>
 
 <script>
+import router from '../routers/router';
+
 export default {
-    props: ['url', 'title', 'onClick'],
+    props: ['url', 'title', 'router'],
     methods: {
         oItemClick() {
-            this.$emit('item-click');
+            debugger
+            if (this.router) {
+                router.push(this.router)
+            }
         }
     }
 }
@@ -24,8 +29,8 @@ export default {
 }
 
 .icon {
-    width: 100px;
-    height: 100px;
+    width: 88px;
+    height: 88px;
 }
 
 .title {

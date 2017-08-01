@@ -7,7 +7,7 @@
             </a>
         </div>
         <div class="body" ref="body">
-            <icon-item class="icon-item" v-for="item in data.slice(0, curLimit)" :key="item.title" :url="item.url" :title="item.title" @item-click="onItemClick(item.click, item.url)" />
+            <icon-item class="icon-item" v-for="item in data.slice(0, curLimit)" :key="item.title" :url="item.url" :title="item.title" :router="item.router"/>
         </div>
         <div class="footer">
             <slot name="footer"></slot>
@@ -37,11 +37,6 @@ export default {
         }
     },
     methods: {
-        onItemClick(fn, url) {
-            if (typeof fn === 'function') {
-                fn(url);
-            }
-        },
         onMoreClick() {
             console.log('onMoreClick');
             const body = this.$refs.body;

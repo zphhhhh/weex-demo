@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div>
+        <div class="header">
             <text class="title">{{ title || '公告' }}</text>
         </div>
         <slider class="content" interval="3000" auto-play="true">
@@ -8,7 +8,7 @@
                 <text class="content-text">{{ item }}</text>
             </a>
         </slider>
-        <div>
+        <div class="footer">
             <text class="aside">更多</text>
         </div>
     </div>
@@ -30,13 +30,18 @@ export default {
     height: 82px;
 }
 
+.header {
+    flex-direction: row;
+    align-items: center;
+}
+
 .title {
     color: #0b98d8;
     border-width: 2px;
     border-color: #0b98d8;
     border-radius: 8px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     padding-left: 14px;
     padding-right: 14px;
     font-size: 22px;
@@ -48,7 +53,6 @@ export default {
     align-items: flex-end;
     margin-left: 20px;
     margin-right: 20px;
-    height: 42px;
 }
 
 .content-item {
@@ -67,9 +71,13 @@ export default {
     text-overflow: ellipsis;
 }
 
+.footer {
+    flex-direction: row;
+    align-items: center;
+}
+
 .aside {
     color: #666;
     font-size: 28px;
-    line-height: 42px;
 }
 </style>

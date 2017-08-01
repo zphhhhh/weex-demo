@@ -616,13 +616,17 @@
 	    "paddingBottom": 20,
 	    "height": 82
 	  },
+	  "header": {
+	    "flexDirection": "row",
+	    "alignItems": "center"
+	  },
 	  "title": {
 	    "color": "#0b98d8",
 	    "borderWidth": 2,
 	    "borderColor": "#0b98d8",
 	    "borderRadius": 8,
-	    "paddingTop": 4,
-	    "paddingBottom": 4,
+	    "paddingTop": 6,
+	    "paddingBottom": 6,
 	    "paddingLeft": 14,
 	    "paddingRight": 14,
 	    "fontSize": 22
@@ -632,8 +636,7 @@
 	    "flexDirection": "row",
 	    "alignItems": "flex-end",
 	    "marginLeft": 20,
-	    "marginRight": 20,
-	    "height": 42
+	    "marginRight": 20
 	  },
 	  "content-item": {
 	    "alignSelf": "flex-start"
@@ -646,10 +649,13 @@
 	    "lineHeight": 42,
 	    "lines": 1
 	  },
+	  "footer": {
+	    "flexDirection": "row",
+	    "alignItems": "center"
+	  },
 	  "aside": {
 	    "color": "#666666",
-	    "fontSize": 28,
-	    "lineHeight": 42
+	    "fontSize": 28
 	  }
 	}
 
@@ -690,7 +696,9 @@
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('div', {
 	    staticClass: ["container"]
-	  }, [_c('div', [_c('text', {
+	  }, [_c('div', {
+	    staticClass: ["header"]
+	  }, [_c('text', {
 	    staticClass: ["title"]
 	  }, [_vm._v(_vm._s(_vm.title || '公告'))])]), _c('slider', {
 	    staticClass: ["content"],
@@ -707,7 +715,9 @@
 	    }, [_vm._v(_vm._s(item))])])
 	  })), _vm._m(0)])
 	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('div', [_c('text', {
+	  return _c('div', {
+	    staticClass: ["footer"]
+	  }, [_c('text', {
 	    staticClass: ["aside"]
 	  }, [_vm._v("更多")])])
 	}]}
